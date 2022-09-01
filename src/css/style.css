@@ -1,6 +1,6 @@
 body {
-    background: url(../imagens/fundo-site.jpg) no-repeat fixed;
     backdrop-filter: blur(2px);
+    background: url(../imagens/fundo-site.jpg) no-repeat fixed;
     background-size: cover;
     min-height: 100vh;
     font-family: 'Aboreto';
