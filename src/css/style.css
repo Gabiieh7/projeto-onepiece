@@ -1,0 +1,148 @@
+body {
+    background: url(../imagens/fundo-site.jpg) no-repeat fixed;
+    backdrop-filter: blur(2px);
+    background-size: cover;
+    min-height: 100vh;
+    font-family: 'Aboreto';
+}
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 90px;
+    
+}
+
+ul {
+    width: 365px;
+    height: 540px;
+    list-style: none;
+    margin-top: 60px;
+    position: relative;
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+}
+
+button {
+    width: 80px;
+    height: 80px;
+    border-radius: 50px;
+    background-color: transparent;
+    border: transparent;
+    
+}
+
+.seta {
+    width: 80px;
+    height: 70px;
+    cursor: pointer;
+    transition: all 1.2s;
+}
+
+.seta:hover {
+    -webkit-transform: rotateZ(360deg) scale(1.5);
+    transform: rotateZ(360deg) scale(1.5);
+}
+
+.cartao {
+    opacity: 0;
+    box-shadow: rgba(0, 0, 0, 0.7) -5px 5px, rgba(10, 10, 10, 0.5) -10px 10px, rgba(20, 20, 20, 0.3) -15px 15px, rgba(30, 30, 30, 0.2) -20px 20px, rgba(40, 40, 40, 0.1) -25px 25px;
+    border: solid 7px;
+    position: absolute;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.selecionado {
+    opacity: 1;
+    z-index: 1;
+}
+
+
+.cartao.luffy {
+    background: url(../imagens/fundo1.jpg);
+    background-size: contain;
+}
+
+.cartao.zoro {
+    background: url(../imagens/fundo2.jpg);
+    background-size: contain;
+}
+
+.cartao.sanji {
+    background: url(../imagens/fundo3.jpg);
+    background-size: contain;
+}
+
+.cartao.nami {
+    background: url(../imagens/fundo4.jpg);
+    background-size: contain;
+}
+
+.cartao.barco {
+    background: url(../imagens/fundo5.jpg);
+    background-size: contain;
+}
+
+.topo {
+    display: flex;
+    justify-content: space-between;
+    padding: 7px;
+    background-color: rgba(48, 47, 35, 0.91);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    margin: 7px 7px 260px 7px;
+}
+
+p {
+    background-color: rgba(48, 47, 35, 0.46);
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 7px;
+    margin: 0 7px;
+    font-weight: 700;
+    color: rgba(255, 255, 255, 0.690);
+    max-height: 150px;
+    overflow-y: auto;
+
+}
+
+::-webkit-scrollbar {
+    width: 1px;
+}
+
+h1 {
+    font-size: 60px;
+    color: rgb(0, 0, 0)
+}
+
+h2 {
+    color: rgb(255, 255, 255);
+}
+
+h3 {
+    background-color: rgba(48, 47, 35, 0.91);
+    padding: 11px;
+    margin: 0 7px;
+    color: rgb(255, 255, 255);
+}
+
+.vida {
+    font-size: 20px;
+    border: solid black 3px;
+    border-radius: 50px;
+}
+
+.nome {
+    margin: 8px 3px;
+}
